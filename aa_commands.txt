@@ -1,0 +1,3 @@
+aquaminder_modules\646_arrayBufferToHex.js:149:      yield closure_2_11(arg0, "AA01" + str.padStart(8, "0").toUpperCase());
+aquaminder_modules\789_HomeScreen.js:460:      yield closure_2_40(arg0, "AA060" + arg1 + replaced + "0" + arg3 + "01" + str.padEnd(24, "0"));
+aquaminder_modules\790_SchedulesScreen.js:309:        let str = "AA05";

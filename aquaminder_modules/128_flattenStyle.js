@@ -1,0 +1,33 @@
+// Module ID: 128
+// Function ID: 1466
+// Name: flattenStyle
+// Dependencies: []
+
+// Module 128 (flattenStyle)
+function flattenStyle(obj) {
+  if (obj !== null) {
+    if (typeof obj === "object") {
+      const _Array = Array;
+      if (Array.isArray(obj)) {
+        obj = {};
+        for (let num = 0; num < length; num = num + 1) {
+          let tmp2 = flattenStyle;
+          let tmp3 = flattenStyle(obj[num]);
+          let tmp4 = num;
+          if (tmp3) {
+            let tmp5 = tmp3;
+            for (const key10019 in tmp3) {
+              let tmp6 = key10019;
+              obj[key10019] = tmp3[key10019];
+              continue;
+            }
+          }
+        }
+        return obj;
+      } else {
+        return obj;
+      }
+    }
+  }
+}
+arg5.default = flattenStyle;

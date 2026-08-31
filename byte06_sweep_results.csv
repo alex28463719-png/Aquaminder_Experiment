@@ -1,0 +1,17 @@
+XX,Command,RGB,Duration,Beep,Observation,Notes
+00,AA0600FF0000,FF0000,9.79,no,none,no
+01,AA0601FF0000,FF0000,8.00,yes,light off,no
+02,AA0602FF0000,FF0000,5.25,no,light off,no
+03,AA0603FF0000,FF0000,5.20,yes,light off,no
+04,AA0604FF0000,FF0000,5.30,no,light off,no
+05,AA0605FF0000,FF0000,5.22,yes,light off,no
+06,AA0606FF0000,FF0000,5.73,no,light off,no
+07,AA0607FF0000,FF0000,5.33,yes,light off,no
+08,AA0608FF0000,FF0000,5.15,yes,light off,no
+09,AA0609FF0000,FF0000,5.20,yes,light off,no
+0A,AA060AFF0000,FF0000,5.21,no,light off,no
+0B,AA060BFF0000,FF0000,5.22,no,light off,no
+0C,AA060CFF0000,FF0000,5.92,yes,light off,no
+0D,AA060DFF0000,FF0000,5.11,yes,light off,no
+0E,AA060EFF0000,FF0000,5.24,no,light off,no
+0F,AA060FFF0000,FF0000,5.31,no,light off,no

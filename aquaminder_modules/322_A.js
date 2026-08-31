@@ -1,0 +1,111 @@
+// Module ID: 322
+// Function ID: 3865
+// Name: A
+// Dependencies: [323]
+
+// Module 322 (A)
+import A from "A" /* 323 */;
+
+require = arg1;
+const dependencyMap = arg6;
+arg5.default = undefined;
+const obj = {
+  step0(arg0) {
+    let num = 0;
+    if (arg0 > 0) {
+      num = 1;
+    }
+    return num;
+  },
+  step1(arg0) {
+    let num = 0;
+    if (arg0 >= 1) {
+      num = 1;
+    }
+    return num;
+  },
+  linear(arg0) {
+    return arg0;
+  },
+  ease(arg0) {
+    if (!callback) {
+      callback = obj.bezier(0.42, 0, 1, 1);
+    }
+    return callback(arg0);
+  },
+  quad(arg0) {
+    return arg0 * arg0;
+  },
+  cubic(arg0) {
+    return arg0 * arg0 * arg0;
+  },
+  poly(arg0) {
+    closure_0 = arg0;
+    return (arg0) => Math.pow(arg0, closure_0);
+  },
+  sin(result) {
+    return 1 - Math.cos(result * Math.PI / 2);
+  },
+  circle(arg0) {
+    return 1 - Math.sqrt(1 - arg0 * arg0);
+  },
+  exp(arg0) {
+    return Math.pow(2, 10 * (arg0 - 1));
+  },
+  elastic() {
+    let num = 1;
+    if (arguments.length > 0) {
+      num = 1;
+      if (arguments[0] !== undefined) {
+        num = arguments[0];
+      }
+    }
+    closure_0 = num * Math.PI;
+    return (arg0) => 1 - Math.pow(Math.cos(arg0 * Math.PI / 2), 3) * Math.cos(arg0 * closure_0);
+  },
+  back() {
+    let num = 1.70158;
+    if (arguments.length > 0) {
+      num = 1.70158;
+      if (arguments[0] !== undefined) {
+        num = arguments[0];
+      }
+    }
+    return (arg0) => arg0 * arg0 * ((num + 1) * arg0 - num);
+  },
+  bounce(arg0) {
+    if (arg0 < 0.36363636363636365) {
+      return 7.5625 * arg0 * arg0;
+    } else if (arg0 < 0.7272727272727273) {
+      const diff = arg0 - 0.5454545454545454;
+      return 7.5625 * diff * diff + 0.75;
+    } else if (arg0 < 0.9090909090909091) {
+      const diff1 = arg0 - 0.8181818181818182;
+      return 7.5625 * diff1 * diff1 + 0.9375;
+    } else {
+      const diff2 = arg0 - 0.9545454545454546;
+      return 7.5625 * diff2 * diff2 + 0.984375;
+    }
+  },
+  bezier(arg0, arg1, arg2, arg3) {
+    return A.default(arg0, arg1, arg2, arg3);
+  },
+  in: function _in(arg0) {
+    return arg0;
+  },
+  out(arg0) {
+    closure_0 = arg0;
+    return (arg0) => 1 - callback(1 - arg0);
+  },
+  inOut(quad) {
+    closure_0 = quad;
+    return (arg0) => {
+      if (arg0 < 0.5) {
+        return quad(arg0 * 2) / 2;
+      } else {
+        return 1 - quad((1 - arg0) * 2) / 2;
+      }
+    };
+  }
+};
+arg5.default = obj;

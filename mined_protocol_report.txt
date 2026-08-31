@@ -1,0 +1,204 @@
+
+======================================================================
+AA0_literal  (3 hit(s))
+======================================================================
+
+--- 646_arrayBufferToHex.js:149 ---
+      const _Math2 = Math;
+      let str = Math.floor(date1.getTime() / 1000);
+      str = str.toString(16);
+      yield closure_2_11(arg0, "AA01" + str.padStart(8, "0").toUpperCase());
+    } catch (err) {
+    }
+  });
+
+
+--- 789_HomeScreen.js:460 ---
+      const substr = replaced1.slice(0, 12);
+      const _Buffer = callback(first[17]).Buffer;
+      str = _Buffer.from(substr, "utf8").toString("hex");
+      yield closure_2_40(arg0, "AA060" + arg1 + replaced + "0" + arg3 + "01" + str.padEnd(24, "0"));
+    });
+    return function sendSettings(arg0, arg1, arg2, arg3, arg4) {
+      return callback(...arguments);
+
+
+--- 790_SchedulesScreen.js:309 ---
+  closure_19 = (() => {
+    closure_0 = isFocused.default(async (arg0, arg1) => {
+      try {
+        let str = "AA05";
+        const iter = arg0[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+
+
+======================================================================
+sendHexCommand_call  (2 hit(s))
+======================================================================
+
+--- 646_arrayBufferToHex.js:178 ---
+    }
+    obj = /^[0-9A-Fa-f]+$/;
+  });
+  return function sendHexCommand(arg0, arg1) {
+    return callback(...arguments);
+  };
+})();
+
+
+--- 789_HomeScreen.js:486 ---
+      }
+      obj = /^[0-9A-Fa-f]+$/;
+    });
+    return function sendHexCommand(arg0, arg1) {
+      return callback(...arguments);
+    };
+  })();
+
+
+======================================================================
+writeBLE_call  (3 hit(s))
+======================================================================
+
+--- 646_arrayBufferToHex.js:124 ---
+      throw tmp46;
+    }
+  });
+  return function writeBLECharacteristicValue(replaced, arg1) {
+    return callback(...arguments);
+  };
+})();
+
+
+--- 789_HomeScreen.js:476 ---
+          const error = new Error("Hex string must have even length: \"" + replaced + "\"");
+          throw error;
+        } else {
+          yield closure_0(first[16]).writeBLECharacteristicValue(replaced, arg0);
+        }
+      } else {
+        const _Error = Error;
+
+
+--- 790_SchedulesScreen.js:392 ---
+          let tmp40 = str;
+          str = str + closure_2_18(tmp7, padRightResult, tmp20.hour, tmp20.minute, tmp21.hour, tmp21.minute, cycleByte, padLeftResult);
+        }
+        yield closure_0(closure_1[14]).writeBLECharacteristicValue(str, arg1);
+      } catch (err) {
+      }
+    });
+
+
+======================================================================
+module_646_import  (6 hit(s))
+======================================================================
+
+--- 499_DeviceSearchScreen.js:125 ---
+    permissions.then(() => {
+      closure_1_2([]);
+      closure_1_5(true);
+      callback(646).checkBluetoothStatus();
+      callback(646).startScan({
+        onDeviceFound(arg0) {
+          closure_0 = arg0;
+
+
+--- 499_DeviceSearchScreen.js:126 ---
+      closure_1_2([]);
+      closure_1_5(true);
+      callback(646).checkBluetoothStatus();
+      callback(646).startScan({
+        onDeviceFound(arg0) {
+          closure_0 = arg0;
+          closure_2_2((arr) => {
+
+
+--- 790_SchedulesScreen.js:322 ---
+          let tmp8 = callback;
+          let tmp9 = dependencyMap;
+          let tmp10 = nextResult;
+          let padRightResult = callback(646).padRight(callback(646).encodeStringToHex(tmp6.description), 24);
+          let str7 = tmp6.start_time;
+          let parts = str7.split(":");
+          let _Number = Number;
+
+
+--- 790_SchedulesScreen.js:346 ---
+          let tmp23 = callback;
+          let tmp24 = dependencyMap;
+          let tmp25 = nextResult;
+          let cycleByte = callback(646).buildCycleByte(tmp6.repeat_type, repeat_days);
+          let cycleInfo = callback(646).getCycleInfo(tmp6.repeat_type, repeat_days);
+          ({ cycleType, cycleWeekList } = cycleInfo);
+          let str9 = tmp6.interval;
+
+
+--- 790_SchedulesScreen.js:347 ---
+          let tmp24 = dependencyMap;
+          let tmp25 = nextResult;
+          let cycleByte = callback(646).buildCycleByte(tmp6.repeat_type, repeat_days);
+          let cycleInfo = callback(646).getCycleInfo(tmp6.repeat_type, repeat_days);
+          ({ cycleType, cycleWeekList } = cycleInfo);
+          let str9 = tmp6.interval;
+          let padLeftResult = callback(646).padLeft(str9.toString(16), 4);
+
+
+--- 790_SchedulesScreen.js:350 ---
+          let cycleInfo = callback(646).getCycleInfo(tmp6.repeat_type, repeat_days);
+          ({ cycleType, cycleWeekList } = cycleInfo);
+          let str9 = tmp6.interval;
+          let padLeftResult = callback(646).padLeft(str9.toString(16), 4);
+          let tmp29 = closure_2_15;
+          if (closure_2_15.enableTimezoneConversion) {
+            let tmp30 = closure_2_17;
+
+
+======================================================================
+buildCycleByte_call  (2 hit(s))
+======================================================================
+
+--- 646_arrayBufferToHex.js:378 ---
+    throw error;
+  }
+}
+export function buildCycleByte(repeat_type, repeat_days) {
+  closure_0 = repeat_type;
+  closure_1 = repeat_days;
+  const items = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+
+
+--- 790_SchedulesScreen.js:346 ---
+          let tmp23 = callback;
+          let tmp24 = dependencyMap;
+          let tmp25 = nextResult;
+          let cycleByte = callback(646).buildCycleByte(tmp6.repeat_type, repeat_days);
+          let cycleInfo = callback(646).getCycleInfo(tmp6.repeat_type, repeat_days);
+          ({ cycleType, cycleWeekList } = cycleInfo);
+          let str9 = tmp6.interval;
+
+
+======================================================================
+getCycleInfo_call  (2 hit(s))
+======================================================================
+
+--- 646_arrayBufferToHex.js:438 ---
+})();
+export const sendSyncTime = tmp6;
+export const sendHexCommand = tmp7;
+export function getCycleInfo(repeat_type, repeat_days) {
+  closure_0 = repeat_type;
+  closure_1 = repeat_days;
+  const items = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+
+
+--- 790_SchedulesScreen.js:347 ---
+          let tmp24 = dependencyMap;
+          let tmp25 = nextResult;
+          let cycleByte = callback(646).buildCycleByte(tmp6.repeat_type, repeat_days);
+          let cycleInfo = callback(646).getCycleInfo(tmp6.repeat_type, repeat_days);
+          ({ cycleType, cycleWeekList } = cycleInfo);
+          let str9 = tmp6.interval;
+          let padLeftResult = callback(646).padLeft(str9.toString(16), 4);
+
